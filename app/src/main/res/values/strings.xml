@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DevProfile</string>
+    <string name="devslopes_text">Devslopes</string>
+    <string name="logo_content_description">Logo</string>
+    <string name="banner_content_description">Banner</string>
+    <string name="camera_content_description">Camera</string>
+    <string name="favorite_content_description">Favorite</string>
+    <string name="inbox_content_description">Inbox</string>
 </resources>
