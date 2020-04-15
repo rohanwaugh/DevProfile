@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,6 +9,7 @@
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/banner_content_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,12 +21,13 @@
         android:layout_height="150dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="160dp"
+        android:contentDescription="@string/logo_content_description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/devslopesprofilelogo" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/devSlopsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
@@ -42,10 +43,11 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
+        android:contentDescription="@string/camera_content_description"
         app:layout_constraintEnd_toStartOf="@+id/favorite"
         app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/devSlopsText"
         app:layout_constraintTop_toBottomOf="@+id/banner"
         app:srcCompat="@drawable/camerabutton" />
 
@@ -54,6 +56,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
+        android:contentDescription="@string/favorite_content_description"
         app:layout_constraintBottom_toBottomOf="@+id/camera"
         app:layout_constraintEnd_toStartOf="@+id/inbox"
         app:layout_constraintHorizontal_bias="0.5"
@@ -67,15 +70,16 @@
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:contentDescription="@string/inbox_content_description"
         app:layout_constraintBottom_toBottomOf="@+id/favorite"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/customizeButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/favorite"
         app:layout_constraintTop_toTopOf="@+id/favorite"
         app:srcCompat="@drawable/inboxbutton" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/customizeButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -104,6 +108,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/data_content_description"
         app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/logo"
@@ -115,6 +120,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/person_content_description"
         app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="@+id/codeimage"
@@ -130,6 +136,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/video_content_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -145,6 +152,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginBottom="32dp"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/code_content_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintStart_toStartOf="@+id/guideline"
