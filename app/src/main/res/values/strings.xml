@@ -6,4 +6,8 @@
     <string name="camera_content_description">Camera</string>
     <string name="favorite_content_description">Favorite</string>
     <string name="inbox_content_description">Inbox</string>
+    <string name="code_content_description">Code</string>
+    <string name="data_content_description">Data</string>
+    <string name="video_content_description">Video</string>
+    <string name="person_content_description">Person</string>
 </resources>
